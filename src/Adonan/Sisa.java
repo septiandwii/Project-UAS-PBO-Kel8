@@ -120,7 +120,7 @@ public class Sisa {
             System.out.println("Es Batu setelah kulakaan" + this.esBatu);
             System.out.println();
             esBatu -= this.esBatu;
-            System.out.println("Es Batu dibutuhkan" + esBatu);
+            System.out.println("Es Batu diibutuhkan" + esBatu);
             cekBahan2(esBatu);
 
         } else {
