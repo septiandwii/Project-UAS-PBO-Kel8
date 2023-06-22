@@ -6,6 +6,7 @@ public abstract class RotiTawar {
     public abstract double butter();
     public abstract double ragi();
     public abstract double susuBubuk();
+    public abstract double susuCair();
     public abstract double telur();
     public abstract double esBatu();
 }
