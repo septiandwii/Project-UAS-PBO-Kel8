@@ -46,7 +46,7 @@ public class Sisa {
             this.butter += bahanTambahan.butter();
             System.out.println("butter setelah kulakan" + this.butter);
             butter -= this.butter;
-            System.out.println("butter dibutuhkan" + butter);
+            System.out.println("butterr dibutuhkan" + butter);
             cekBahan2(butter);
 
         } else {
