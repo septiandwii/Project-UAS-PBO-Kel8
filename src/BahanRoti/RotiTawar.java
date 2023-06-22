@@ -8,4 +8,5 @@ public abstract class RotiTawar {
     double susuBubuk;
     double telur;
     double esBatu;
+    double keju;
 }
