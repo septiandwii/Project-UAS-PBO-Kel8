@@ -54,7 +54,7 @@ public class BahanRotiTawarPerPcs extends RotiTawar implements TotalBeratBahan{
     }
 
     @Override
-    public int getTotalBerat() {
+    public double getTotalBerat() {
         int totalBerat = (int) (telur() + esBatu() + susuCair());
         return totalBerat;
     }
