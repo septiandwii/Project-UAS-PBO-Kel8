@@ -1,8 +1,9 @@
 package Adonan;
 
+import BahanRoti.Pizza;
 import BahanRoti.RotiTawar;
 
-public class BahanRotiPizzaPerPcs extends RotiTawar {
+public class BahanRotiPizzaPerPcs extends Pizza {
     @Override
     public double tepungTerigu() {
         int total = 1950/190;
