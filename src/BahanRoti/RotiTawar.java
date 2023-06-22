@@ -1,11 +1,11 @@
 package BahanRoti;
 
 public abstract class RotiTawar {
-    double tepungTerigu;
-    double gulaPasir;
-    double butter;
-    double ragi;
-    double susuBubuk;
-    double telur;
-    double esBatu;
+    public abstract double tepungTerigu();
+    public abstract double gulaPasir();
+    public abstract double butter();
+    public abstract double ragi();
+    public abstract double susuBubuk();
+    public abstract double telur();
+    public abstract double esBatu();
 }

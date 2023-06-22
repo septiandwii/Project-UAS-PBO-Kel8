@@ -1,11 +1,11 @@
 package BahanRoti;
 
 public abstract class ToppingFilling {
-    double keju;
-    double coklat;
-    double krimVanilla;
-    double Redbean;
-    double sosis;
-    double smokeBeef;
-    double bawangBombay;
+    public abstract double keju();
+    public abstract double coklat();
+    public abstract double krimVanilla();
+    public abstract double Redbean();
+    public abstract double sosis();
+    public abstract double smokeBeef();
+    public abstract double bawangBombay();
 }
