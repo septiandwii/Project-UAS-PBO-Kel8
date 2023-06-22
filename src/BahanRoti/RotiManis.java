@@ -1,5 +1,5 @@
 package BahanRoti;
 
-public class RotiManis extends RotiTawar{
+public abstract class RotiManis extends RotiTawar{
 
 }

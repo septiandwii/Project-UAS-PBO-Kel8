@@ -1,4 +1,4 @@
 package BahanRoti;
 
-public class Pizza extends RotiTawar{
+public abstract class Pizza extends RotiTawar{
 }
