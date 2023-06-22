@@ -117,7 +117,7 @@ public class Sisa {
         if(this.esBatu < esBatu) {
             System.out.println("Es Batu sebelum kulakan " + this.esBatu);
             this.esBatu += bahanTambahan.esBatu();
-            System.out.println("Es Batu setelah kulakan" + this.esBatu);
+            System.out.println("Es Batu setelah kulakaan" + this.esBatu);
             System.out.println();
             esBatu -= this.esBatu;
             System.out.println("Es Batu dibutuhkan" + esBatu);
