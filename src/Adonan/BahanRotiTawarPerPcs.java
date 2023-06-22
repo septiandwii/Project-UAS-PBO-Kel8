@@ -2,10 +2,12 @@ package Adonan;
 
 import BahanRoti.RotiTawar;
 
-public class BahanRotiTawarPerPcs extends RotiTawar {
+public class BahanRotiTawarPerPcs extends RotiTawar implements TotalBeratBahan{
+
+    int beratTotalAdonan = 2065;
     @Override
     public double tepungTerigu() {
-        int total = 2065/400;
+        int total = beratTotalAdonan/400;
         return 1000/total;
     }
 
@@ -49,5 +51,11 @@ public class BahanRotiTawarPerPcs extends RotiTawar {
     public double esBatu() {
         int total = 2065/400;
         return 300/total;
+    }
+
+    @Override
+    public int getTotalBerat() {
+        int totalBerat = (int) (telur() + esBatu() + susuCair());
+        return totalBerat;
     }
 }
