@@ -4,58 +4,59 @@ import BahanRoti.RotiTawar;
 
 public class BahanRotiTawarPerPcs extends RotiTawar implements TotalBeratBahan{
 
-    int beratTotalAdonan = 2065;
+    int beratTotalAdonanTawar = 2065;
+    int kebutuhanPerPCSTawar = 400;
     @Override
     public double tepungTerigu() {
-        int total = beratTotalAdonan/400;
+        int total = beratTotalAdonanTawar/kebutuhanPerPCSTawar;
         return 1000/total;
     }
 
     @Override
     public double gulaPasir() {
-        int total = 2065/400;
+        int total = beratTotalAdonanTawar/kebutuhanPerPCSTawar;
         return 125/total;
     }
 
     @Override
     public double butter() {
-        int total = 2065/400;
+        int total = beratTotalAdonanTawar/kebutuhanPerPCSTawar;
         return 100/total;
     }
 
     @Override
     public double ragi() {
-        int total = 2065/400;
+        int total = beratTotalAdonanTawar/kebutuhanPerPCSTawar;
         return 20/total;
     }
 
     @Override
     public double susuBubuk() {
-        int total = 2065/400;
+        int total = beratTotalAdonanTawar/kebutuhanPerPCSTawar;
         return 250/total;
     }
 
     @Override
     public double susuCair() {
-        int total = 2065/400;
+        int total = beratTotalAdonanTawar/kebutuhanPerPCSTawar;
         return 200/total;
     }
 
     @Override
     public double telur() {
-        int total = 2065/400;
+        int total = beratTotalAdonanTawar/kebutuhanPerPCSTawar;
         return 70/total;
     }
 
     @Override
     public double esBatu() {
-        int total = 2065/400;
+        int total = beratTotalAdonanTawar/kebutuhanPerPCSTawar;
         return 300/total;
     }
 
     @Override
     public int getTotalBerat() {
-        int totalBerat = (int) (telur() + esBatu() + susuCair());
+        int totalBerat = (int) (tepungTerigu()+gulaPasir()+butter()+ragi()+susuBubuk()+susuCair() + esBatu() + telur()  );
         return totalBerat;
     }
 }
