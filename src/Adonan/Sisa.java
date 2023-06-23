@@ -90,7 +90,7 @@ public class Sisa {
             System.out.println("Susu Cair setelah kulakan" + this.susuCair);
             System.out.println();
             susuCair -= this.susuCair;
-            System.out.println("Susu Cair dibutuhkan" + susuCair);
+            System.out.println("Susu Cair dibutuhkann" + susuCair);
             cekBahan2(susuCair);
 
         } else {
