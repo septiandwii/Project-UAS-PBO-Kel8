@@ -2,7 +2,7 @@ package Adonan;
 
 import BahanRoti.ToppingFilling;
 
-public class BahanToppingFillingPerPcs extends ToppingFilling {
+public abstract class BahanToppingFillingPerPcs extends ToppingFilling {
     @Override
     public double keju() {
         return 250;
