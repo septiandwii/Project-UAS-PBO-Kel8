@@ -13,7 +13,7 @@ public class Sisa {
 //    public void cekBahan(double tepungTerigu){
 //        if(this.tepungTerigu < tepungTerigu){
 //            System.out.println("Tepung terigu sebelum kulakan"+this.tepungTerigu);
-//            this.tepungTerigu += bahanTambahan.tepungTerigu();
+//            this.tepungTerigu += dbahanTambahan.tepungTerigu();
 //            System.out.println("Tepung terigu setelah kulakan"+this.tepungTerigu);
 //            tepungTerigu -= this.tepungTerigu;
 //            System.out.println("tepung terigu dibutuhkan: "+tepungTerigu);
