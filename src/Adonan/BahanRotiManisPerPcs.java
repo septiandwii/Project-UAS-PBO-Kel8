@@ -55,7 +55,7 @@ public class BahanRotiManisPerPcs extends RotiManis implements TotalBeratBahan {
     }
 
     @Override
-    public int getTotalBerat() {
+    public double getTotalBerat() {
         int totalBeratManis = (int)(tepungTerigu()+gulaPasir()+butter()+ragi()+susuBubuk()+susuCair() + esBatu() + telur());
         return totalBeratManis;
     }
