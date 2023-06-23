@@ -6,5 +6,8 @@ public class Main {
         BahanRotiManisPerPcs bahanRotiManisPerPcs = new BahanRotiManisPerPcs();
         sisaBahanRotiManis.cekBahan(bahanRotiManisPerPcs.tepungTerigu()*500);
         System.out.println(sisaBahanRotiManis.tepungTerigu);
+
+
     }
+
 }
