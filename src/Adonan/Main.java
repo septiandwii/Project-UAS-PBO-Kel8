@@ -13,7 +13,8 @@ public class Main {
         BahanRotiManisPerPcs manis = new BahanRotiManisPerPcs();
         Sisa sisa = new Sisa();
         double butuh = 100.0;
-        sisa.cekBahan(manis.tepungTerigu()*butuh, manis.gulaPasir()*butuh, manis.butter() * butuh, manis.ragi()*butuh, manis.susuBubuk()*butuh, manis.susuCair()*butuh, manis.telur()*butuh, manis.esBatu()*butuh);
+//        sisa.cekBahan(manis.tepungTerigu()*butuh, manis.gulaPasir()*butuh, manis.butter() * butuh, manis.ragi()*butuh, manis.susuBubuk()*butuh, manis.susuCair()*butuh, manis.telur()*butuh, manis.esBatu()*butuh);
+        sisa.cekBahan(0, 0,0,0,0,0,0,0);
         System.out.println(sisa.modal);
     }
 }

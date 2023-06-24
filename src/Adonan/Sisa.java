@@ -1,7 +1,9 @@
 package Adonan;
+import Harga.HargaBahan;
 
-public class Sisa {
+public class Sisa extends HargaBahan{
     BahanTambahan bahanTambahan = new BahanTambahan();
+    double modal = 0;
     double tepungTerigu = 0;
     double gulaPasir = 0;
     double butter = 0;
@@ -10,122 +12,110 @@ public class Sisa {
     double susuCair = 0;
     double telur = 0;
     double esBatu = 0;
-//    public void cekBahan(double tepungTerigu){
-//        if(this.tepungTerigu < tepungTerigu){
-//            System.out.println("Tepung terigu sebelum kulakan"+this.tepungTerigu);
-//            this.tepungTerigu += dbahanTambahan.tepungTerigu();
-//            System.out.println("Tepung terigu setelah kulakan"+this.tepungTerigu);
-//            tepungTerigu -= this.tepungTerigu;
-//            System.out.println("tepung terigu dibutuhkan: "+tepungTerigu);
-//            cekBahan(tepungTerigu);
-//
-//        } else {
-//            this.tepungTerigu -= tepungTerigu;
-//            System.out.println("Tepung terigu setelah dikurangi butuh: "+this.tepungTerigu);
-//        }
-//
-//    }
-//    public void cekBahan2(double gulaPasir){
-//        if(this.gulaPasir < gulaPasir) {
-//            System.out.println("gula pasir sebelum kulakan " + this.gulaPasir);
-//            this.gulaPasir += bahanTambahan.gulaPasir();
-//            System.out.println("gula pasir setelah kulakan" + this.gulaPasir);
-//            gulaPasir -= this.gulaPasir;
-//            System.out.println("gula pasir dibutuhkan" + gulaPasir);
-//            cekBahan2(gulaPasir);
-//
-//        } else {
-//            this.gulaPasir -= gulaPasir;
-//            System.out.println("Gula Pasir setelah dikurangi butuh" + this.gulaPasir);
-//        }
-//    }
-//
-//    public void cekBahan3(double butter){
-//        if(this.butter < butter) {
-//            System.out.println("butter sebelum kulakan " + this.butter);
-//            this.butter += bahanTambahan.butter();
-//            System.out.println("butter setelah kulakan" + this.butter);
-//            butter -= this.butter;
-//            System.out.println("butterr dibutuhkan" + butter);
-//            cekBahan2(butter);
-//
-//        } else {
-//            this.butter -= butter;
-//            System.out.println("butter setelah dikurangi butuh" + this.butter);
-//        }
-//    }
-//    public void cekBahan4(double ragi){
-//        if(this.ragi < ragi) {
-//            System.out.println("ragi sebelum kulakan " + this.ragi);
-//            this.ragi += bahanTambahan.ragi();
-//            System.out.println("ragi setelah kulakan" + this.ragi);
-//            ragi -= this.ragi;
-//            System.out.println("ragi dibutuhkan" + ragi);
-//            cekBahan2(ragi);
-//
-//        } else {
-//            this.ragi -= ragi;
-//            System.out.println("ragi setelah dikurangi butuh" + this.ragi);
-//        }
-//    }
-//    public void cekBahan5(double susuBubuk){
-//        if(this.susuBubuk < susuBubuk) {
-//            System.out.println("Susu Bubuk sebelum kulakan " + this.susuBubuk);
-//            this.susuBubuk += bahanTambahan.susuBubuk();
-//            System.out.println("Susu Bubuk setelah kulakan" + this.susuBubuk);
-//            System.out.println();
-//            susuBubuk -= this.susuBubuk;
-//            System.out.println("Susu Bubuk dibutuhkan" + susuBubuk);
-//            cekBahan2(susuBubuk);
-//
-//        } else {
-//            this.susuBubuk -= susuBubuk;
-//            System.out.println("Susu Bubuk setelah dikurangi butuh" + this.susuBubuk);
-//        }
-//    }
-//    public void cekBahan6(double susuCair){
-//        if(this.susuCair < susuCair) {
-//            System.out.println("Susu Cair sebelum kulakan " + this.susuCair);
-//            this.susuCair += bahanTambahan.susuCair();
-//            System.out.println("Susu Cair setelah kulakan" + this.susuCair);
-//            System.out.println();
-//            susuCair -= this.susuCair;
-//            System.out.println("Susu Cair dibutuhkann" + susuCair);
-//            cekBahan2(susuCair);
-//
-//        } else {
-//            this.susuCair -= susuCair;
-//            System.out.println("Susu Cair setelah dikurangi butuh" + this.susuCair);
-//        }
-//    }
-//    public void cekBahan7(double telur){
-//        if(this.telur < telur) {
-//            System.out.println("telur sebelum kulakan " + this.telur);
-//            this.telur += bahanTambahan.telur();
-//            System.out.println("telur setelah kulakan" + this.telur);
-//            System.out.println();
-//            telur -= this.telur;
-//            System.out.println("telur dibutuhkan" + telur);
-//            cekBahan2(telur);
-//
-//        } else {
-//            this.telur -= telur;
-//            System.out.println("telur setelah dikurangi butuh" + this.telur);
-//        }
-//    }
-//    public void cekBahan8(double esBatu){
-//        if(this.esBatu < esBatu) {
-//            System.out.println("Es Batu sebelum kulakan " + this.esBatu);
-//            this.esBatu += bahanTambahan.esBatu();
-//            System.out.println("Es Batu setelah kulakaan" + this.esBatu);
-//            System.out.println();
-//            esBatu -= this.esBatu;
-//            System.out.println("Es Batu diibutuhkan" + esBatu);
-//            cekBahan2(esBatu);
-//
-//        } else {
-//            this.esBatu -= esBatu;
-//            System.out.println("Es Batu setelah dikurangi butuh" + this.esBatu);
-//        }
-//    }
+    public void cekBahan(double tepungTerigu, double gulaPasir, double butter, double ragi, double susuBubuk, double susuCair, double telur, double esBatu) {
+        this.cekTepungTerigu(tepungTerigu);
+        this.cekGulaPasir(gulaPasir);
+        this.cekButter(butter);
+        this.cekRagi(ragi);
+        this.cekSusuBubuk(susuBubuk);
+        this.cekSusuCair(susuCair);
+        this.cekTelur(telur);
+        this.cekEsBatu(esBatu);
+    }
+
+    private void cekTepungTerigu(double tepungTerigu) {
+        double sisaTepungTeriguButuh = tepungTerigu;
+
+        while (this.tepungTerigu < sisaTepungTeriguButuh) {
+            this.tepungTerigu += this.bahanTambahan.tepungTerigu();
+            this.modal += this.hargaTepungTerigu;
+            this.tepungTerigu -= tepungTerigu;
+            sisaTepungTeriguButuh -= tepungTerigu;
+        }
+        this.tepungTerigu -= tepungTerigu;
+    }
+
+    private void cekGulaPasir(double gulaPasir) {
+        double sisaTepungGulaPasirButuh = gulaPasir;
+
+        while (this.gulaPasir < sisaTepungGulaPasirButuh) {
+            this.gulaPasir += this.bahanTambahan.gulaPasir();
+            this.modal += this.hargaGulaPasir;
+            this.gulaPasir -= gulaPasir;
+            sisaTepungGulaPasirButuh -= gulaPasir;
+        }
+        this.gulaPasir -= gulaPasir;
+    }
+
+    private void cekButter(double butter) {
+        double sisaButter = butter;
+
+        while (this.butter < sisaButter) {
+            this.butter += this.bahanTambahan.butter();
+            this.modal += this.hargaButter;
+            this.butter -= butter;
+            sisaButter -= butter;
+        }
+        this.butter -= butter;
+    }
+
+    private void cekRagi(double ragi) {
+        double sisaRagi = ragi;
+
+        while (this.ragi < sisaRagi) {
+            this.ragi += this.bahanTambahan.ragi();
+            this.modal += this.hargaRagi;
+            this.ragi -= ragi;
+            sisaRagi -= ragi;
+        }
+        this.ragi -= ragi;
+    }
+
+    private void cekSusuBubuk(double susuBubuk) {
+        double sisaSusuBubuk = susuBubuk;
+
+        while (this.susuBubuk < sisaSusuBubuk) {
+            this.susuBubuk += this.bahanTambahan.susuBubuk();
+            this.modal += this.hargaSusuBubuk;
+            this.susuBubuk -= susuBubuk;
+            sisaSusuBubuk -= susuBubuk;
+        }
+        this.susuBubuk -= susuBubuk;
+    }
+
+    private void cekSusuCair(double susuCair) {
+        double sisaSusuCair = susuCair;
+
+        while (this.susuCair < sisaSusuCair) {
+            this.susuCair += this.bahanTambahan.susuCair();
+            this.modal += this.hargaSusuCair;
+            this.susuCair -= susuCair;
+            sisaSusuCair -= susuCair;
+        }
+        this.susuCair -= susuCair;
+    }
+
+    private void cekTelur(double telur) {
+        double sisaTelur = telur;
+
+        while (this.telur < sisaTelur) {
+            this.telur += this.bahanTambahan.telur();
+            this.modal += this.hargaTelur;
+            this.telur -= telur;
+            sisaTelur -= telur;
+        }
+        this.telur -= telur;
+    }
+
+    private void cekEsBatu(double esBatu) {
+        double sisaEsBatu = esBatu;
+
+        while (this.esBatu < sisaEsBatu) {
+            this.esBatu += this.bahanTambahan.esBatu();
+            this.modal += this.hargaEsBatu;
+            this.esBatu -= esBatu;
+            sisaEsBatu -= esBatu;
+        }
+        this.esBatu -= esBatu;
+    }
 }
