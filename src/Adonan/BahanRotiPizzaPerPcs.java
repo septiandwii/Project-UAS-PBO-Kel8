@@ -56,7 +56,7 @@ public class BahanRotiPizzaPerPcs extends Pizza implements TotalBeratBahan {
 
     @Override
     public double getTotalBerat() {
-        int TotalBeratPizza = (int)(tepungTerigu()+gulaPasir()+butter()+ragi()+susuBubuk()+susuCair() + esBatu() + telur());
-        return beratTotalAdonanPizza;
+        int totalBeratPizza = (int)(tepungTerigu()+gulaPasir()+butter()+ragi()+susuBubuk()+susuCair() + esBatu() + telur());
+        return totalBeratPizza;
     }
 }

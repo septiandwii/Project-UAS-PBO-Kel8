@@ -2,7 +2,7 @@ package Harga;
 
 public abstract class HargaBahan {
     public double hargaTepungTerigu = 40000;
-    public double hargaTepungTeriguPerGram = hargaTepungTerigu/1000;
+    public double hargaTepungTeriguPerGram = hargaTepungTerigu / 1000;
     public double hargaGulaPasir = 25000;
     public double hargaGulaPasirPerGram = hargaGulaPasir / 1000;
     public double hargaButter = 23000;
