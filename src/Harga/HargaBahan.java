@@ -1,6 +1,6 @@
 package Harga;
 
-public abstract class HargaBahan {
+public class HargaBahan {
     public double hargaTepungTerigu = 40000;
     public double hargaTepungTeriguPerGram = hargaTepungTerigu / 1000;
     public double hargaGulaPasir = 25000;
@@ -17,5 +17,10 @@ public abstract class HargaBahan {
     public double hargaTelurPerGram = hargaTelur / 1000;
     public double hargaEsBatu = 2000;
     public double hargaEsBatuPerGram = hargaEsBatu / 1000;
+
+    public double getTotalHargaBahanPerGram(){
+        int totalBeratPerGram = (int) (hargaTepungTeriguPerGram +hargaGulaPasirPerGram + hargaButterPerGram + hargaRagiPerGram + hargaSusuBubukPerGram + hargaSusuCairPerGram + hargaTelurPerGram + hargaEsBatuPerGram );
+        return totalBeratPerGram;
+    }
 
 }
