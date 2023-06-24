@@ -8,7 +8,7 @@ public class HargaRotiTawarVarian1 {
     HargaTopFill topFill= new HargaTopFill();
 
     public HargaRotiTawarVarian1() {
-        modal = (int) (rotiTawarPerPcs.modal + (topFill.hargaCoklatPerGram * 80));
+        modal = (int) ((rotiTawarPerPcs.modal) + (topFill.hargaCoklatPerGram * 80));
         profit = (int) (modal * 0.4);
         hargaJual = modal +profit;
     }
