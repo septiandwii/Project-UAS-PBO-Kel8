@@ -1,9 +1,9 @@
 package Adonan;
 import Harga.HargaBahan;
 
-public class Sisa extends HargaBahan{
+public class KelolaBahan extends HargaBahan{
     BahanTambahan bahanTambahan = new BahanTambahan();
-    double modal = 0;
+    public double modal = 0;
     double tepungTerigu = 0;
     double gulaPasir = 0;
     double butter = 0;
