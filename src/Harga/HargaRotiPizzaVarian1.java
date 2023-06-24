@@ -1,9 +1,9 @@
 package Harga;
 
 public class HargaRotiPizzaVarian1 {
-    int modal;
-    int hargaJual;
-    int profit;
+    public int modal;
+    public int hargaJual;
+    public int profit;
     HargaRotiPizzaPerPcs rotiPizzaPerPcs = new HargaRotiPizzaPerPcs();
     HargaTopFill topFill= new HargaTopFill();
 
