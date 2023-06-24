@@ -1,14 +1,14 @@
 package Harga;
 
-public class HargaRotiManisVarian2 {
+public class HargaRotiManisVarian3 {
     int modal;
     int hargaJual;
     int profit;
     HargaRotiManisPerPcs rotiManisPerPcs = new HargaRotiManisPerPcs();
     HargaTopFill topFill= new HargaTopFill();
 
-    public HargaRotiManisVarian2() {
-        modal = (int) (rotiManisPerPcs.modal + (topFill.hargaSelaiRedBeanPerGram * 10) + (topFill.hargaKrimVanillaPerGram * 5));
+    public HargaRotiManisVarian3() {
+        modal = (int) (rotiManisPerPcs.modal + (topFill.hargaKejuPerGram * 10) + (topFill.hargaSosisPerGram * 10));
         profit = (int) (modal * 0.4);
         hargaJual = modal +profit;
     }
