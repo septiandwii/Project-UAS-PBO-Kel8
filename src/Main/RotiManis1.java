@@ -15,6 +15,11 @@ public class RotiManis1 {
         System.out.println();
         System.out.println("- Varian 3 : Isi Keju Sosis");
         System.out.println("             - tanpa topping");
+        int pilihan = input.nextInt();
+        if(pilihan == 1){
+            System.out.println("Masukan jumlah: ");
+        }
+
 
     }
 
