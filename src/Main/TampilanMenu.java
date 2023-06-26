@@ -140,6 +140,6 @@ public class TampilanMenu {
             }
         } while(milihMenu != 5);
 
-        System.out.println("Makasih cuy dah bermain , sehat selalu ya !");
+        System.out.println("Makasih Telah Berbelanja !");
     }
 }
