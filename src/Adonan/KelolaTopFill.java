@@ -4,7 +4,12 @@ import BahanRoti.ToppingFilling;
 import Harga.HargaTopFill;
 
 public class KelolaTopFill extends HargaTopFill {
-    TopFilTambahan tambahan = new TopFilTambahan();
+    TopFilTambahan tambahan = new TopFilTambahan() {
+        @Override
+        public double Redbean() {
+            return 0;
+        }
+    };
     public double modal = 0;
     public double keju = 0;
     public double coklat = 0;
